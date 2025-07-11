@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  
+  background-color: #dfdeee;
+  color:#003366
+}
+
+
+.container-top  {
+ text-align: center;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+
+.container-max {
+  margin: 0px 8px 10px 290px;
+}
+
+.text-box {
+  font-weight: 700;
+  font-size: large;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px 30px 1px;
+}
+
+.texto2 {
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+
+
+.container-box {
+  display: flex;
+  width: 150%;
+  max-width: 990px;
+  margin: 5px auto;
+}
+
+
+header {
+  background-color: #003366;
+  font-size: x-large;
+  color: rgb(240, 141, 28);
+  padding: 0.5px 0;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  margin-top: 60px;
+
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 1px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 1px 5px 0 8px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #003366;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin: 0 5px;
+}
+
+.sobre,
+.servicos,
+.contato {
+  padding: 65px 0;
+  background-color: white;
+  margin: 10px;
+}
+
+
+
+
+
+
+.dicas {
+  display: flex;
+  margin: 100px 34% 5px;
+
+}
+
+.dicas-banner {
+  background-color: #003366;
+  color: orange;
+  padding: 25px 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 10px auto 1px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bg-light {
+  padding: 20px 20px 60px 80px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+ 
+}
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.section-title p {
+  color: #050505;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.servicos ul {
+  list-style-type: square;
+  padding-left: 50px;
+  font-size: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+form button:hover {
+  background-color: #e65c00;
+}
+
+.redes-sociais a {
+  font-size: 24px;
+  color: #003366;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+/* RESPONSIVO - Celulares e tablets */
+@media (max-width: 1024px) {
+  .container-max,
+  .container,
+  .container-box {
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1,
+  .texto2 {
+    margin: 0 auto 20px;
+    font-size: 1.5em;
+    text-align: center;
+    float: none;
+  }
+
+  nav ul {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .banner {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .banner h2 {
+    font-size: 1.4em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+
+  .container-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-box img {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  .text-box {
+    padding: 0 10px;
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  .dicas {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 10px;
+    gap: 10px;
+  }
+
+  .dicas-banner {
+    font-size: 1em;
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .bg-light {
+    padding: 20px 15px;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+
+  .redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}
+
+/* RESPONSIVO - Telas menores que 480px */
+@media (max-width: 480px) {
+  header {
+    padding: 30px 10px;
+    font-size: 1.2em;
+  }
+}
