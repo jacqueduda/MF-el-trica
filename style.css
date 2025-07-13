@@ -6,16 +6,16 @@
 }
 
 body {
-  
+
   background-color: #dfdeee;
-  color:#003366
+  color: #003366
 }
 
 
-.container-top  {
- text-align: center;
- margin-top: 50px;
- margin-bottom: 50px;
+.container-top {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .container-max {
@@ -41,10 +41,20 @@ body {
 
 .container-box {
   display: flex;
-  width: 150%;
-  max-width: 990px;
-  margin: 5px auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* ajuda em telas menores */
+  gap: 20px;
 }
+
+.imagem-eletricista {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 
 header {
@@ -131,7 +141,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
- 
+
 }
 
 
@@ -238,14 +248,32 @@ footer {
 }
 
 /* RESPONSIVO - Celulares e tablets */
+
+
 @media (max-width: 1024px) {
+
   .container-max,
   .container,
   .container-box {
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .container-box {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .imagem-eletricista {
+      margin: 10px auto;
+      /* centraliza no mobile */
+    }
   }
 
   header h1,
