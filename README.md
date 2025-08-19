@@ -3,6 +3,7 @@
 <br>
 <h2>Esse é meu primeiro Projeto freelancer responsivo com as técnicas Html, css e javascript ,que estou aprendendo no <a href="https://rodolfomori.com.br/devclub">DevClub</a> </h2>
 <h2>É um site para uma empresa de prestação de instalações elétricas em Geral </h2>
+<h2>Esse é o link do site que já está on-line <a href="https://fcostainstalacoeseletricas.com.br/">fcostainstalacoeseletricas.com.br</a></h2>
 <img src="https://github.com/jacqueduda/MF-el-trica/blob/main/assets/lendaaa.png?raw=true"/>
 <br>
 <h2>Nesse projeto eu ofereci ao cliente ,além do site , todo o design da marca da empresa e seus produtos como boné ,cartões de visita,crachá e camisetas .</h2>
